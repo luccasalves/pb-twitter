@@ -1,0 +1,42 @@
+.btn {
+  padding: 10px 20px;
+  color: white;
+  border-radius: 16rem;
+  outline: none;
+  border: none;
+
+  font-size: 2rem;
+  cursor: pointer;
+
+  &-sm {
+    font-size: 0.95rem;
+    padding: 8px 24px;
+  }
+  &-md {
+    font-size: 0.95rem;
+    padding: 12px 42px;
+  }
+  &-lg {
+    font-size: 1.3rem;
+    padding: 16px 56px;
+  }
+
+  &-primary {
+    background-color: var(--primary);
+  }
+  &-secondary {
+    background-color: var(--secondary);
+    color: var(--primary);
+  }
+
+  &-outline-primary {
+    border: solid 2px var(--primary);
+    background-color: transparent;
+    color: var(--primary);
+  }
+  &-outline-secondary {
+    border: solid 2px var(--secondary);
+    background-color: transparent;
+    color: var(--secondary);
+  }
+}

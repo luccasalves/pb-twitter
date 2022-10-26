@@ -1,0 +1,20 @@
+@import "./reset";
+@import "./dimensions";
+@import "./colors.dark";
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&display=swap");
+* {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+#app {
+  width: 100vw;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-dark {
+  background-color: var(--bg-dark);
+}
