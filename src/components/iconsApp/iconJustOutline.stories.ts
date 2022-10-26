@@ -12,22 +12,7 @@ export default {
     },
     name: {
       control: { type: "select" },
-      options: [
-        "more-circle",
-        "more",
-        "chat",
-        "share",
-        "like",
-        "upload",
-        "star",
-        "img",
-        "gif",
-        "emoji",
-        "calendar",
-        "calender-time ",
-        "search",
-        "back",
-      ],
+      options: ["more-circle", "more", "chat", "share", "like", "upload"],
     },
   } as Meta,
 };

@@ -1,6 +1,6 @@
 //@ts-ignore
 import { Meta, Story } from "@storybook/html";
-import { IconApp, IIconProps } from "./iconApp";
+import { IconBase, IIconProps } from "./iconBase";
 
 export default {
   title: "Components/Icon",
@@ -18,7 +18,7 @@ export default {
 };
 
 const Template: Story<IIconProps> = (args: IIconProps) => {
-  return IconApp(args);
+  return IconBase(args);
 };
 
 export const flat = Template.bind({});
