@@ -1,7 +1,3 @@
-import { ButtonApp } from "./components/button/Button";
-import "./styles/app.scss";
-import { changeTheme } from "./theme/dark";
+import "./styles/app.css";
 
 const App = document.querySelector("#app");
-
-App?.append(ButtonApp({ label: "tweet", action: changeTheme }));

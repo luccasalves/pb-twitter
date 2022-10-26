@@ -1,10 +1,10 @@
-import "./Button.styles.scss";
+import "./Button.css";
 
 export interface IButtonProps {
   label: string;
-  color?: string;
+  color?: "primary" | "secondary";
   size?: "sm" | "md" | "lg";
-  mode?: "flat" | "outline-primary" | "outline-secondary";
+  outline?: boolean;
   action: () => void;
 }
 
@@ -12,12 +12,16 @@ export const ButtonApp = ({
   label,
   color = "primary",
   size = "md",
-  mode = "flat",
+  outline = false,
   action,
 }: IButtonProps) => {
   const button = document.createElement("button");
 
-  button.classList.add("btn", `btn-${size}`, `btn-${color}`, `btn-${mode}`);
+  button.classList.add(
+    "btn",
+    `btn--${size}`,
+    outline ? `btn--outline-${color}` : `btn--flat-${color}`
+  );
   button.setAttribute("type", "button");
   button.textContent = label;
 

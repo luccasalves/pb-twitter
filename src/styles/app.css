@@ -1,9 +1,18 @@
-@import "./reset";
-@import "./dimensions";
-@import "./colors.dark";
+@import "_reset.css";
+@import "_dimensions.css";
+@import "_colors.dark.css";
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&display=swap");
 * {
   font-family: "Lexend Deca", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+  color: pink;
 }
 
 #app {
@@ -13,8 +22,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: green;
 }
 
 .bg-dark {
-  background-color: var(--bg-dark);
+  background-color: var(--bg-dark) !important;
 }

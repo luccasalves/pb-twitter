@@ -1,0 +1,42 @@
+.btn {
+  padding: 10px 20px;
+  border-radius: 16rem;
+  outline: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+}
+
+.btn--sm {
+  font-size: 0.95rem;
+  padding: 8px 24px;
+}
+.btn--md {
+  font-size: 0.95rem;
+  padding: 12px 42px;
+}
+.btn--lg {
+  font-size: 1.3rem;
+  padding: 16px 56px;
+}
+
+.btn--flat-primary {
+  background-color: var(--primary);
+}
+
+.btn--flat-secondary {
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+
+.btn--outline-primary {
+  border: solid 2px var(--primary);
+  background-color: transparent;
+  color: var(--primary);
+}
+.btn--outline-secondary {
+  border-color: var(--secondary) !important;
+  background-color: transparent;
+  color: var(--secondary);
+}

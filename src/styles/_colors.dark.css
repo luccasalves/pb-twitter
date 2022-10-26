@@ -1,0 +1,26 @@
+:root {
+  --primary: #1da1f2;
+  --primary-disable: #1da0f2b5;
+  --secondary: #fff;
+  --like: #f4245e;
+
+  --bg: #f7f9fa;
+  --bg-dark: #1c2733;
+
+  --surface: #fff;
+  --surface-dark: #17202a;
+
+  --text-placeholder: #8899a6;
+
+  --text-color: #0f1419;
+  --text-color-dark: #fff;
+
+  --input-color: #283340;
+  --input-color-dark: #ebeef0;
+
+  --separator: #ebeef0;
+  --separator-dark: #313b44;
+
+  --border-color: #8899a6;
+  --border-light-color: #e1e4e7;
+}
