@@ -6,15 +6,6 @@
   font-family: "Lexend Deca", sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-p,
-a {
-  color: pink;
-}
-
 #app {
   width: 100vw;
   min-height: 100vh;
@@ -22,9 +13,17 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: green;
+  background-color: var(--bg);
 }
 
 .bg-dark {
   background-color: var(--bg-dark) !important;
+  color: var(--text-color-dark);
+}
+
+/* .surface {
+  background-color: var(--surface);
+} */
+.surface-dark {
+  background-color: var(--surface-dark);
 }

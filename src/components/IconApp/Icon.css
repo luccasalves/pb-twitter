@@ -1,0 +1,15 @@
+.icon--blue {
+    color: var(--primary);
+}
+.icon--red {
+    color: var(--like);
+}
+.icon--gray {
+    color: var(--text-placeholder);
+}
+.icon--black {
+    color: var(--text-color);
+}
+.icon--white {
+    color: var(--secondary);
+}
