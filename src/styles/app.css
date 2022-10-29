@@ -6,8 +6,10 @@
   font-family: "Lexend Deca", sans-serif;
 }
 
-#app {
-  width: 100vw;
+#app,
+#window {
+  max-width: 1440px;
+  margin: auto;
   min-height: 100vh;
 
   display: flex;
@@ -20,10 +22,11 @@
   background-color: var(--bg-dark) !important;
   color: var(--text-color-dark);
 }
-
-/* .surface {
+.surface {
   background-color: var(--surface);
-} */
+}
+
 .surface-dark {
   background-color: var(--surface-dark);
+  border-color: var(--separator-dark);
 }

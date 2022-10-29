@@ -13,3 +13,7 @@
 .icon--white {
     color: var(--secondary);
 }
+
+.fa-twitter {
+    font-size: 30px;
+}

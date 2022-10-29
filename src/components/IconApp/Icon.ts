@@ -30,17 +30,18 @@ export interface IIconProps {
 export const IconApp = ({ name, color }: IIconProps) => {
   const cdnFontAwesome = document.createElement("script");
   const i = document.createElement("i");
+  i.className = "icon";
 
   cdnFontAwesome.setAttribute(
     "src",
     "https://kit.fontawesome.com/e3dde8a434.js"
   );
 
-  i.append(cdnFontAwesome);
+  // i.append(cdnFontAwesome);
 
-  // if (name == "twitter") {
-  //   return i.classList.add(`fa-brands`, `fa-${name}`, `icon--${color}`, `icon`);
-  // }
+  if (name == "twitter") {
+    i.classList.add(`fa-brands`, `fa-${name}`, `icon--${color}`, `icon`);
+  }
   i.classList.add(`fa-solid`, `fa-${name}`, `icon--${color}`, `icon`);
   return i;
 };

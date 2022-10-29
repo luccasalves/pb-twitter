@@ -1,0 +1,11 @@
+.news-drawer {
+    width: 350px;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 100px;
+
+    border-left: solid 3px var(--separator);
+}
