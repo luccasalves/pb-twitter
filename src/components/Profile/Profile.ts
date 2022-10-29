@@ -30,7 +30,7 @@ export const Profile = ({
   profile.append(
     Avatar({ src: imgSrc }),
     nameBox,
-    IconApp({ name: "ellipsis" })
+    IconApp({ name: "ellipsis", action() {} })
   );
 
   return profile;

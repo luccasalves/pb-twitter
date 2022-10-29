@@ -21,7 +21,7 @@ export default {
         "retweet",
         "heart",
         "arrow-up-from-bracket",
-        "sparkles",
+        "circle-half-stroke",
         "image",
         "gif",
         "list",

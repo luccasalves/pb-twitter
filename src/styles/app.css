@@ -6,8 +6,7 @@
   font-family: "Lexend Deca", sans-serif;
 }
 
-#app,
-#window {
+#app {
   max-width: 1440px;
   margin: auto;
   min-height: 100vh;

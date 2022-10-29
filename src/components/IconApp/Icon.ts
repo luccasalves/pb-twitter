@@ -16,7 +16,7 @@ export interface IIconProps {
     | "retweet"
     | "heart"
     | "arrow-up-from-bracket"
-    | "sparkles"
+    | "circle-half-stroke"
     | "image"
     | "gif"
     | "list"
@@ -25,9 +25,12 @@ export interface IIconProps {
     | "magnifying-glass"
     | "arrow-left"
     | "location-dot";
+  action: () => void;
 }
 
-export const IconApp = ({ name, color }: IIconProps) => {
+function ghost() {}
+
+export const IconApp = ({ name, color, action = ghost }: IIconProps) => {
   const cdnFontAwesome = document.createElement("script");
   const i = document.createElement("i");
   i.className = "icon";
@@ -38,6 +41,9 @@ export const IconApp = ({ name, color }: IIconProps) => {
   );
 
   // i.append(cdnFontAwesome);
+  i.addEventListener("click", () => {
+    action();
+  });
 
   if (name == "twitter") {
     i.classList.add(`fa-brands`, `fa-${name}`, `icon--${color}`, `icon`);
