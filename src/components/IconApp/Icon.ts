@@ -34,12 +34,19 @@ export const IconApp = ({ name, color, action = ghost }: IIconProps) => {
   const cdnFontAwesome = document.createElement("script");
   const i = document.createElement("i");
   i.className = "icon";
+  i.classList.toggle;
 
   cdnFontAwesome.setAttribute(
     "src",
     "https://kit.fontawesome.com/e3dde8a434.js"
   );
+  name == "heart" &&
+    i.addEventListener("click", (event) => {
+      const currentIcon = event.target;
 
+      //@ts-ignore
+      currentIcon.classList.toggle("heart-on");
+    });
   // i.append(cdnFontAwesome);
   i.addEventListener("click", () => {
     action();

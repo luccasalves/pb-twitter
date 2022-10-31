@@ -7,6 +7,8 @@
     gap: 10px;
 
     position: relative;
+
+    font-size: 15px;
 }
 
 .profile .name {

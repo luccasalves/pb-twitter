@@ -1,0 +1,32 @@
+.tweet {
+    padding: 12px;
+}
+
+.imgWrapper {
+    max-width: 600px;
+    margin-left: 60px;
+    margin-top: 10px;
+}
+
+.imgWrapper img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.tweet-header {
+    display: flex;
+    gap: 10px;
+}
+
+.tweet-profile {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 6px;
+}
+
+.tweet-profile .name {
+    font-weight: bold;
+}
+.tweet-profile .user-name {
+    color: var(--text-placeholder);
+}

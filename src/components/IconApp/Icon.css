@@ -20,3 +20,10 @@
 .fa-twitter {
     font-size: 30px;
 }
+
+.heart-on {
+    color: var(--like);
+}
+.fa-heart:active {
+    transform: scale(1.5);
+}

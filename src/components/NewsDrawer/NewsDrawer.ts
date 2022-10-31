@@ -29,10 +29,26 @@ export const NewsDrawer = () => {
         "https://ac24horas.com/wp-content/uploads/2022/10/FLAMENGO-GANHA.jpg",
     }),
   ];
+  const imgPicachu =
+    "https://conteudo.imguol.com.br/c/entretenimento/58/2017/05/30/pikachu-nervoso-1496159464346_v2_450x450.png";
 
+  const thanos =
+    "https://i.pinimg.com/564x/9f/7c/b7/9f7cb79579c2282c6c8daf83f8149a18.jpg";
   const profiles = [
-    Profile({ showOption: false, showBtnFollow: true }),
-    Profile({ showOption: false, showBtnFollow: true }),
+    Profile({
+      name: "TuTanos",
+      userName: "xtala_dedos",
+      imgSrc: thanos,
+      showOption: false,
+      showBtnFollow: true,
+    }),
+    Profile({
+      name: "Pikachu",
+      userName: "pk_boladao",
+      imgSrc: imgPicachu,
+      showOption: false,
+      showBtnFollow: true,
+    }),
   ];
 
   newsAside.append(
