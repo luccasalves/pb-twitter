@@ -3,6 +3,12 @@ export function changeTheme() {
   const app = document.querySelector("#app");
   const surface = document.querySelectorAll(".surface");
 
+  const box = document.querySelectorAll(".box");
+
+  box.forEach((item) => {
+    item.classList.toggle("bg-dark");
+  });
+
   window?.classList.toggle("bg-dark");
   app?.classList.toggle("bg-dark");
 

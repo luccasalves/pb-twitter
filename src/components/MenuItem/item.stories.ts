@@ -22,5 +22,5 @@ const Template: Story<IMenuItem> = (args: IMenuItem) => {
 export const Item = Template.bind({});
 Item.args = {
   text: "sorry",
-  icon: { name: "heart" },
+  icon: { name: "heart", action() {} },
 };

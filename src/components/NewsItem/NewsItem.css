@@ -1,0 +1,36 @@
+.item {
+    display: flex;
+
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.item:hover {
+    background-color: rgba(0, 0, 0, 0.209);
+}
+.img {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+}
+
+.label {
+    color: var(--text-placeholder);
+    font-size: 14px;
+}
+
+.content-news {
+    font-weight: bold;
+    font-size: 15px;
+    margin: 8px 0;
+}
+
+.footer-news {
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.footer-news .hashtag {
+    color: var(--primary);
+}

@@ -1,0 +1,16 @@
+.search-box {
+    background-color: var(--input-color);
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding: 8px 12px;
+    border-radius: 16px;
+    gap: 10px;
+}
+
+.input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--text-placeholder);
+}

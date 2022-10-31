@@ -7,6 +7,8 @@ export default {
     name: { control: "text" },
     userName: { control: "text" },
     imgSrc: { control: "text" },
+    showOption: { control: "boolean" },
+    showBtnFollow: { control: "boolean" },
   },
 } as Meta;
 
@@ -15,4 +17,7 @@ const Template: Story<IProfileProps> = (args: IProfileProps) => {
 };
 
 export const profile = Template.bind({});
-profile.args = {};
+profile.args = {
+  showBtnFollow: false,
+  showOption: true,
+};
