@@ -12,7 +12,7 @@ type ProfileTweet = {
 export interface ITweetProps {
   profileTweet: ProfileTweet;
   text: string;
-  postImg: string;
+  postImg: string | any;
 }
 
 export const Tweet = (props: ITweetProps) => {
