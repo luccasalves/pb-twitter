@@ -1,0 +1,29 @@
+.icon {
+    cursor: pointer;
+}
+.icon--blue {
+    color: var(--primary);
+}
+.icon--red {
+    color: var(--like);
+}
+.icon--gray {
+    color: var(--text-placeholder);
+}
+.icon--black {
+    color: var(--text-color);
+}
+.icon--white {
+    color: var(--secondary);
+}
+
+.fa-twitter {
+    font-size: 30px;
+}
+
+.heart-on {
+    color: var(--like);
+}
+.fa-heart:active {
+    transform: scale(1.5);
+}

@@ -21,8 +21,6 @@ export default {
 } as Meta;
 
 const Template: Story<IButtonProps> = (args: IButtonProps) => {
-  // You can either use a function to create DOM elements or use a plain html string!
-  // return `<div>${label}</div>`;
   return ButtonApp(args);
 };
 

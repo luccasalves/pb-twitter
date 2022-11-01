@@ -1,0 +1,13 @@
+.news-drawer {
+    box-sizing: border-box;
+    width: 600px;
+    min-height: 100vh;
+
+    padding: 16px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    border-left: solid 3px var(--separator);
+}

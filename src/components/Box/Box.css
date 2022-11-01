@@ -1,0 +1,24 @@
+.box {
+    padding: 8px;
+    border-radius: 8px;
+}
+.bg-news {
+    background-color: var(--bg);
+}
+
+.heading {
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.see-more {
+    padding: 16px 8px;
+}
+
+.see-more a {
+    color: var(--primary);
+    text-decoration: none;
+}
+.see-more:hover {
+    background-color: rgba(0, 0, 0, 0.209);
+}

@@ -1,0 +1,12 @@
+.menu-item {
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    color: var(--primary) !important;
+    transform: scale(1.05);
+}
