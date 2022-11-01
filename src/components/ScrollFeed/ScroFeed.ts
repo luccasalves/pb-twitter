@@ -33,9 +33,9 @@ export const ScrollFeed = () => {
         "https://midias.agazeta.com.br/2022/06/15/league-of-legends-781485.jpg",
     }),
     Tweet({
-      name: "",
-      username: "_papaBrocolis",
-      avatarSrc: "../../../public/img/avatar.png",
+      name: "Ze Biscoito",
+      username: "mc_cookie",
+      avatarSrc: "img/avatar.png",
 
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium non aperiam accusantium magni voluptate provident, quod quis ducimus alias nesciunt quidem porro corrupti! Aperiam maxime, consequuntur repellat dolores quidem ullam?",
       postImg:
@@ -44,7 +44,7 @@ export const ScrollFeed = () => {
     Tweet({
       name: "Ciclano",
       username: "_ciclone",
-      avatarSrc: "../../../public/img/2.png",
+      avatarSrc: "img/2.png",
 
       text: "That is a wonderful picture",
       postImg:
