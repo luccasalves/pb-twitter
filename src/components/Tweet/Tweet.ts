@@ -1,4 +1,3 @@
-import { IProfileProps } from "../Profile/Profile";
 import { TweetButtonBar } from "./../TweetButtonBar/TweetButtonBar";
 import { Avatar } from "../Avatar/Avatar";
 import "./Tweet.css";

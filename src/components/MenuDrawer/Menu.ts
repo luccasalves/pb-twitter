@@ -2,7 +2,6 @@ import { notFound } from "./../../utils/redirect";
 import { Profile } from "./../Profile/Profile";
 import { ButtonApp } from "./../ButtonApp/Button";
 import { MenuItem } from "../MenuItem/Item";
-import { changeTheme } from "../../theme/dark";
 import "./Menu.css";
 import { IconApp } from "../IconApp/Icon";
 export const MenuDrawer = () => {
@@ -25,6 +24,7 @@ export const MenuDrawer = () => {
     ButtonApp({ label: "tweet", action: notFound })
   );
 
+  //@ts-ignore
   menu.append(drawerItens, Profile({}));
 
   return menu;

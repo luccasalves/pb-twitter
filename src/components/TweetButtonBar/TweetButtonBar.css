@@ -5,6 +5,8 @@
     display: flex;
     justify-content: space-between;
     font-size: 1.4rem;
+
+    max-width: 600px;
 }
 
 span {

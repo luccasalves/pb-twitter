@@ -1,4 +1,3 @@
-import { notFound } from "./../../utils/redirect";
 import { IconApp, IIconProps } from "./../IconApp/Icon";
 import "./Item.css";
 

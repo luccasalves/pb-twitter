@@ -37,7 +37,7 @@ export const ScrollFeed = () => {
       username: "mc_cookie",
       avatarSrc: "img/avatar.png",
 
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium non aperiam accusantium magni voluptate provident, quod quis ducimus alias nesciunt quidem porro corrupti! Aperiam maxime, consequuntur repellat dolores quidem ullam?",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
       postImg:
         "https://images.pexels.com/photos/8351335/pexels-photo-8351335.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     }),

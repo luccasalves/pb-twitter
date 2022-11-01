@@ -1,4 +1,3 @@
-import { avatar } from "./Avatar.stories";
 import "./Avatar.css";
 
 export interface IAvatar {
