@@ -5,6 +5,22 @@
 * {
   font-family: "Lexend Deca", sans-serif;
 }
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(12, 89, 162, 0.31);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 
 #app {
   max-width: 1440px;
@@ -28,4 +44,5 @@
 .surface-dark {
   background-color: var(--surface-dark);
   border-color: var(--separator-dark);
+  color: white;
 }

@@ -3,19 +3,40 @@
     height: 100vh;
     overflow-x: hidden;
 }
-::-webkit-scrollbar {
-    width: 6px;
-}
-::-webkit-scrollbar-track {
-    background: transparent;
+
+.create-post {
+    display: flex;
+    padding: 12px;
+    margin-bottom: 12px;
+    gap: 10px;
 }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: rgba(12, 89, 162, 0.31);
+.post-content {
+    width: 100%;
 }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #555;
+.textarea-post {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2rem;
+    border: 3px solid transparent;
+}
+
+.textarea-post:focus {
+    border-color: none;
+    outline: none;
+}
+
+.action-icons {
+    padding: 8px;
+    display: flex;
+    gap: 20px;
+    font-size: 1.2rem;
+}
+.action-bar {
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: 1.2rem;
 }
