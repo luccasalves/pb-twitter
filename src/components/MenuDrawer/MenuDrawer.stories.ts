@@ -11,4 +11,4 @@ const Template: Story = () => {
   return MenuDrawer();
 };
 
-export const Menu = Template.bind({});
+export const menuDrawer = Template.bind({});

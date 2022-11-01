@@ -3,16 +3,20 @@
 
 ### Tecnologias utilizadas
 
+<div>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="50" />
 
  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/storybook/storybook-original.svg" width="50" />
 
  <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fseeklogo.com%2Fimages%2FV%2Fvite-logo-BFD4283991-seeklogo.com.png&f=1&nofb=1&ipt=d86ef74d77e80a2c2f7356fa94e313a961d716da5c75d4fd67e20eaab9a9b888&ipo=images" width="50" />
+</div>
 
 #### Preview do projeto - clone do Twitter
 
+<div>
 <img src="./public/preview-dark.jpg" width="400"/>
 <img src="./public/preview.jpg" width="400"/>
+</div>
 
 #### Instruções para rodar a aplicação
 
@@ -27,5 +31,3 @@
 #### Instruções para consultar a documentação dos components
 
 - Abrir o servidor da documentação:
-
-           yarn storybook ou npm run storybook

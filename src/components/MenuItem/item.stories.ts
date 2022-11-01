@@ -19,8 +19,8 @@ const Template: Story<IMenuItem> = (args: IMenuItem) => {
   return MenuItem(args.text, args.icon);
 };
 
-export const Item = Template.bind({});
-Item.args = {
+export const menuItem = Template.bind({});
+menuItem.args = {
   text: "sorry",
   icon: { name: "heart", action() {} },
 };

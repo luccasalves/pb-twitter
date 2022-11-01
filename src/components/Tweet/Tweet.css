@@ -15,7 +15,9 @@
 
 .tweet-header {
     display: flex;
+    flex-wrap: nowrap;
     gap: 10px;
+    width: 100%;
 }
 
 .tweet-profile {
@@ -29,4 +31,8 @@
 }
 .tweet-profile .user-name {
     color: var(--text-placeholder);
+}
+
+.text-header {
+    width: 90%;
 }

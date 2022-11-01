@@ -3,27 +3,29 @@ import { TweetButtonBar } from "./../TweetButtonBar/TweetButtonBar";
 import { Avatar } from "../Avatar/Avatar";
 import "./Tweet.css";
 
-type ProfileTweet = {
+export interface ITweetProps {
   name: string;
   username: string;
-  avatarSrc?: string;
-};
-
-export interface ITweetProps {
-  profileTweet: ProfileTweet;
+  avatarSrc: string;
   text: string;
   postImg: string | any;
 }
 
-export const Tweet = (props: ITweetProps) => {
+export const Tweet = ({
+  name,
+  username,
+  avatarSrc,
+  text,
+  postImg,
+}: ITweetProps) => {
   const tweet = document.createElement("div");
   tweet.classList.add("tweet", "surface");
 
   const imgWrapper = document.createElement("div");
   imgWrapper.className = "imgWrapper";
   const img = document.createElement("img");
-  img.src = props.postImg;
-  props.postImg ? imgWrapper.append(img) : (props.postImg = "");
+  img.src = postImg;
+  postImg ? imgWrapper.append(img) : (postImg = "");
 
   const tweetHeader = document.createElement("div");
   const profile = document.createElement("div");
@@ -42,9 +44,9 @@ export const Tweet = (props: ITweetProps) => {
   userNameText.className = "user-name";
   postTime.className = "user-name";
 
-  nameText.textContent = props.profileTweet.name;
-  userNameText.textContent = "@" + props.profileTweet.username + " . ";
-  tweetText.textContent = props.text;
+  nameText.textContent = name;
+  userNameText.textContent = "@" + username + " . ";
+  tweetText.textContent = text;
   postTime.textContent = " right now";
 
   profile.append(nameText, userNameText, postTime);
@@ -61,11 +63,12 @@ export const Tweet = (props: ITweetProps) => {
     }
   }, time);
 
+  textHeader.className = "text-header";
   textHeader.append(profile, tweetText);
 
   tweetHeader.append(
     Avatar({
-      src: props.profileTweet.avatarSrc,
+      src: avatarSrc,
     }),
     textHeader
   );
