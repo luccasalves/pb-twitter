@@ -16,8 +16,8 @@ const Template: Story<INewsItem> = (args: INewsItem) => {
   return NewsItem(args);
 };
 
-export const Item = Template.bind({});
-Item.args = {
+export const newsItem = Template.bind({});
+newsItem.args = {
   label: "Pokemon - 2h ago",
   text: "Pikachu is putasso",
   hashtag: "pikachu",

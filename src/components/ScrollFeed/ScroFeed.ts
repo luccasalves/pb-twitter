@@ -13,33 +13,39 @@ export const ScrollFeed = () => {
 
   const tweets = [
     Tweet({
-      profileTweet: {
-        name: "Frajola",
-        username: "_saurolino",
-        avatarSrc:
-          "https://images.pexels.com/photos/5984809/pexels-photo-5984809.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      },
+      name: "Frajola",
+      username: "_saurolino",
+      avatarSrc:
+        "https://images.pexels.com/photos/5984809/pexels-photo-5984809.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+
       text: "Bad boy 'w'",
       postImg:
         "https://images.pexels.com/photos/208984/pexels-photo-208984.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     }),
     Tweet({
-      profileTweet: {
-        name: "Faker",
-        username: "_papaBrocolis",
-        avatarSrc:
-          "https://sm.ign.com/t/ign_br/screenshot/default/34722014736-2d241425f9-k_d66m.h960.jpg",
-      },
+      name: "Faker",
+      username: "_papaBrocolis",
+      avatarSrc:
+        "https://sm.ign.com/t/ign_br/screenshot/default/34722014736-2d241425f9-k_d66m.h960.jpg",
+
       text: "My secret to being the best in the world is eating broccoli",
       postImg:
         "https://midias.agazeta.com.br/2022/06/15/league-of-legends-781485.jpg",
     }),
     Tweet({
-      profileTweet: {
-        name: "Ciclano",
-        username: "_ciclone",
-        avatarSrc: "../../../public/img/2.png",
-      },
+      name: "Ze Biscoito",
+      username: "mc_cookie",
+      avatarSrc: "img/avatar.png",
+
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium non aperiam accusantium magni voluptate provident, quod quis ducimus alias nesciunt quidem porro corrupti! Aperiam maxime, consequuntur repellat dolores quidem ullam?",
+      postImg:
+        "https://images.pexels.com/photos/8351335/pexels-photo-8351335.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    }),
+    Tweet({
+      name: "Ciclano",
+      username: "_ciclone",
+      avatarSrc: "img/2.png",
+
       text: "That is a wonderful picture",
       postImg:
         "https://images.pexels.com/photos/14036568/pexels-photo-14036568.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",

@@ -31,5 +31,3 @@
 #### Instruções para consultar a documentação dos components
 
 - Abrir o servidor da documentação:
-
-           yarn storybook ou npm run storybook

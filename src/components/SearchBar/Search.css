@@ -1,5 +1,4 @@
 .search-box {
-    background-color: var(--input-color);
     display: flex;
     justify-items: center;
     align-items: center;
@@ -13,4 +12,11 @@
     border: none;
     outline: none;
     color: var(--text-placeholder);
+}
+
+.input-surface {
+    background-color: var(--input-color);
+}
+.input-surface-dark {
+    background-color: var(--input-color-dark);
 }

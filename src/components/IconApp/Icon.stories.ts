@@ -43,8 +43,8 @@ const Template: Story<IIconProps> = (args: IIconProps) => {
   return IconApp(args);
 };
 
-export const Solid = Template.bind({});
-Solid.args = {
+export const icon = Template.bind({});
+icon.args = {
   name: "bell",
   color: "blue",
 };

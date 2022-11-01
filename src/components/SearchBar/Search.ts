@@ -3,7 +3,7 @@ import "./Search.css";
 
 export const SearchBar = () => {
   const searchBar = document.createElement("div");
-  searchBar.classList.add("search-box");
+  searchBar.classList.add("search-box", "input-surface");
   const input = document.createElement("input");
   input.placeholder = "Search Twitter";
   input.className = "input";
