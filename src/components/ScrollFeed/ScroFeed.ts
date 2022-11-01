@@ -5,6 +5,7 @@ import { Tweet } from "../Tweet/Tweet";
 import { HeaderApp } from "./../HeaderApp/Header";
 import "./ScrollFeed.css";
 import { IconApp } from "../IconApp/Icon";
+import { notFound } from "../../utils/redirect";
 
 export const ScrollFeed = () => {
   const feed = document.createElement("main");
@@ -18,9 +19,9 @@ export const ScrollFeed = () => {
         avatarSrc:
           "https://images.pexels.com/photos/5984809/pexels-photo-5984809.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       },
-      text: "'w'",
+      text: "Bad boy 'w'",
       postImg:
-        "https://images.pexels.com/photos/674570/pexels-photo-674570.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "https://images.pexels.com/photos/208984/pexels-photo-208984.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     }),
     Tweet({
       profileTweet: {
@@ -58,7 +59,7 @@ export const ScrollFeed = () => {
   postContent.classList.add("post-content", "surface");
   textArea.classList.add("textarea-post", "surface");
   textArea.placeholder = "Whats happening?";
-  textArea.rows = 2;
+  textArea.rows = 1;
 
   inputFile.className = "input-file";
   inputFile.type = "file";
@@ -73,10 +74,10 @@ export const ScrollFeed = () => {
   actionIcons.append(
     inputFileLabel,
     inputFile,
-    IconApp({ name: "list", color: "blue", action() {} }),
-    IconApp({ name: "face-smile", color: "blue", action() {} }),
-    IconApp({ name: "calendar-day", color: "blue", action() {} }),
-    IconApp({ name: "location-dot", color: "blue", action() {} })
+    IconApp({ name: "list", color: "blue", action: notFound }),
+    IconApp({ name: "face-smile", color: "blue", action: notFound }),
+    IconApp({ name: "calendar-day", color: "blue", action: notFound }),
+    IconApp({ name: "location-dot", color: "blue", action: notFound })
   );
 
   inputFile.addEventListener("change", (event) => {

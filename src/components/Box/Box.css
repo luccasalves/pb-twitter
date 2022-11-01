@@ -1,5 +1,6 @@
 .box {
     padding: 8px;
+    border-radius: 8px;
 }
 .bg-news {
     background-color: var(--bg);

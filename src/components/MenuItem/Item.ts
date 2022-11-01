@@ -1,3 +1,4 @@
+import { notFound } from "./../../utils/redirect";
 import { IconApp, IIconProps } from "./../IconApp/Icon";
 import "./Item.css";
 
@@ -12,7 +13,7 @@ export const MenuItem = (text: string, icon: IIconProps) => {
   item.classList.add("menu-item");
 
   txt.textContent = text;
-  item.append(IconApp({ name: icon.name }), txt);
+  item.append(IconApp({ name: icon.name, action() {} }), txt);
 
   return item;
 };

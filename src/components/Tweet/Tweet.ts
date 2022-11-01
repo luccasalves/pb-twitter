@@ -31,17 +31,35 @@ export const Tweet = (props: ITweetProps) => {
   const nameText = document.createElement("p");
   const userNameText = document.createElement("p");
   const tweetText = document.createElement("p");
+  const postTime = document.createElement("p");
+
+  let counter = 0;
+  let time = 60000;
 
   tweetHeader.className = "tweet-header";
   profile.className = "tweet-profile";
   nameText.className = "name";
   userNameText.className = "user-name";
+  postTime.className = "user-name";
 
   nameText.textContent = props.profileTweet.name;
-  userNameText.textContent = "@" + props.profileTweet.username;
+  userNameText.textContent = "@" + props.profileTweet.username + " . ";
   tweetText.textContent = props.text;
+  postTime.textContent = " right now";
 
-  profile.append(nameText, userNameText);
+  profile.append(nameText, userNameText, postTime);
+
+  setInterval(() => {
+    counter++;
+
+    postTime.textContent = counter.toString() + "m ago";
+
+    if (counter >= 60) {
+      counter = 1;
+      postTime.textContent = counter.toString() + "h ago";
+      time = 36000000;
+    }
+  }, time);
 
   textHeader.append(profile, tweetText);
 
